@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Vemperu - Licencias Originales desde S/49{% endblock %}</title>
+    <meta name="description" content="Licencias originales Windows 11, Office 365, Kaspersky con entrega inmediata. Pago Yape, Plin y tarjeta.">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+
+    <!-- Tailwind CDN + Config para que @apply funcione en <style> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Aquí van tus clases personalizadas con @apply (VSCode ya no se queja) -->
+    <style type="text/tailwindcss">
+      .gradient-bg {
+        @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900;
+      }
+      .glow {
+        text-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+      }
+      .price {
+        @apply text-7xl font-black;
+      }
+      .badge {
+        @apply bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-bold inline-block;
+      }
+      .card-hover {
+        @apply hover:border-cyan-400 hover:scale-105 transition-all duration-300;
+      }
+    </style>
+</head>
+<body class="gradient-bg text-white min-h-screen">
+
+    <!-- Header fijo -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-cyan-900/50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center font-black text-2xl text-white">VP</div>
+                <span class="text-2xl font-bold">Vemperu</span>
+            </div>
+            <a href="https://wa.me/51928975897" class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-bold text-lg flex items-center gap-3 transition">
+                WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/60 py-12 mt-20 border-t border-cyan-900/30">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl font-bold mb-2">Vemperu © 2025 • Licencias 100% Originales</p>
+            <p class="text-gray-400">Entrega inmediata • Garantía de por vida • Soporte 24/7</p>
+        </div>
+    </footer>
+</body>
+</html>

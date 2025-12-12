@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Vemperu - Licencias Originales desde S/49{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="text-center py-20 px-6">
+    <h1 class="text-5xl md:text-7xl font-black mb-6 glow leading-tight">
+        Licencias <span class="text-cyan-400">Originales</span><br>
+        desde <span class="text-cyan-400">S/49</span>
+    </h1>
+    <p class="text-2xl md:text-3xl text-cyan-300 mb-10">Entrega por email en menos de 2 minutos</p>
+    
+    <div class="flex flex-wrap justify-center gap-5 text-lg mb-12">
+        <span class="badge">Garantía de por vida</span>
+        <span class="badge from-emerald-500 to-teal-600">Pago Yape / Plin</span>
+        <span class="badge from-purple-500 to-pink-600">+10,000 clientes felices</span>
+    </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="max-w-7xl mx-auto px-6 pb-20">
+    <h2 class="text-4xl font-black text-center mb-12 glow">Productos Más Vendidos</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- OFFICE 365 -->
+        <div class="bg-white/5 backdrop-blur-lg border border-cyan-800/50 rounded-3xl p-8 card-hover">
+            <h3 class="text-3xl font-bold mb-4">Office 365 Familia</h3>
+            <div class="price text-cyan-400 mt-3">S/119</div>
+            <s class="text-gray-500">S/599</s>
+            <ul class="my-6 space-y-3 text-left">
+                <li>6 usuarios + 6TB OneDrive</li>
+                <li>Word, Excel, PowerPoint, Teams</li>
+                <li>1 año completo</li>
+            </ul>
+            <a href="https://wa.me/51928975897?text=Hola!%20Quiero%20Office%20365%20por%20S/119" 
+               class="block bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-5 rounded-2xl text-center text-xl">
+                Comprar Ahora
+            </a>
+        </div>
+
+        <!-- WINDOWS 11 PRO (MÁS VENDIDO) -->
+        <div class="bg-white/5 backdrop-blur-lg border border-pink-800/50 rounded-3xl p-8 card-hover scale-105 shadow-2xl">
+            <span class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 inline-block">MÁS VENDIDO</span>
+            <h3 class="text-3xl font-bold mb-4">Windows 11 Pro</h3>
+            <div class="price text-pink-400">S/79</div>
+            <s class="text-gray-500">S/499</s>
+            <a href="https://wa.me/51928975897?text=Hola!%20Quiero%20Windows%2011%20Pro%20por%20S/79" 
+               class="block bg-pink-500 hover:bg-pink-400 text-black font-bold py-5 rounded-2xl text-center text-xl mt-8">
+                Lo Quiero Ya
+            </a>
+        </div>
+
+        <!-- KASPERSKY -->
+        <div class="bg-white/5 backdrop-blur-lg border border-green-800/50 rounded-3xl p-8 card-hover">
+            <h3 class="text-3xl font-bold mb-4">Kaspersky Total 1 Año</h3>
+            <div class="price text-green-400">S/49</div>
+            <s class="text-gray-500">S/189</s>
+            <a href="https://wa.me/51928975897?text=Hola!%20Quiero%20Kaspersky%20por%20S/49" 
+               class="block bg-green-500 hover:bg-green-400 text-black font-bold py-5 rounded-2xl text-center text-xl mt-16">
+                Comprar Ahora
+            </a>
+        </div>
+
+        <!-- Agrega más productos aquí igual (Windows 10, Office 2021, Autodesk, etc.) -->
+
+    </div>
+</section>
+{% endblock %}
