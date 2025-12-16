@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Vemperu - Licencias Originales desde S/30{% endblock %}</title>
+    <title>{% block title %}Vemperu - Licencias desde S/29{% endblock %}</title>
     <meta name="description" content="Licencias originales Windows 11, Office 2024, Autodesk, Adobe, ESET con entrega inmediata.">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,26 +20,29 @@
 </head>
 <body class="gradient-bg text-white min-h-screen">
 
+    <!-- Header compacto en móvil -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-cyan-900/50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center font-black text-2xl">VP</div>
-                <span class="text-2xl font-bold">Vemperu</span>
+        <div class="container mx-auto px-4 py-2 md:py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 md:gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center font-black text-xl md:text-2xl">VP</div>
+                <span class="text-lg md:text-2xl font-bold">Vemperu</span>
             </div>
-            <a href="https://wa.me/51928975897" class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-full font-bold text-lg flex items-center gap-3">
+            <a href="https://wa.me/51928975897" class="bg-green-500 hover:bg-green-600 px-4 py-2 md:px-8 md:py-4 rounded-full font-bold text-sm md:text-lg flex items-center gap-2 transition">
                 WhatsApp +51 928 975 897
             </a>
         </div>
     </header>
 
-    <main class="pt-24">
+    <main class="pt-20 md:pt-24">
         {% block content %}{% endblock %}
     </main>
 
+    <!-- Footer con correo y número -->
     <footer class="bg-black/60 py-12 mt-20 border-t border-cyan-900/30">
         <div class="container mx-auto px-6 text-center">
             <p class="text-xl font-bold mb-4">Vemperu © 2025 • Licencias 100% Originales</p>
-            <p class="mb-2">Correo: <a href="mailto:ventas@vemperu.com" class="text-cyan-400">ventas@vemperu.com</a></p>
+            <p class="mb-4">Correo: <a href="mailto:ventas@vemperu.com" class="text-cyan-400 underline">ventas@vemperu.com</a></p>
+            <p class="mb-4">WhatsApp: <a href="https://wa.me/51928975897" class="text-green-400 underline">+51 928 975 897</a></p>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm mb-8">
                 <div>
                     <p class="font-bold text-cyan-400">Factura o Boleta</p>
@@ -55,7 +58,7 @@
                 </div>
                 <div>
                     <p class="font-bold text-cyan-400">Soporte Premium</p>
-                    <p>WhatsApp: +51 928 975 897</p>
+                    <p>Resolución rápida vía WhatsApp</p>
                 </div>
             </div>
             <p class="text-gray-400">Entrega inmediata • Pago seguro Yape / Plin / Transferencia</p>
